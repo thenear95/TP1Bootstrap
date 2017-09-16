@@ -1,0 +1,30 @@
+.container-head{
+    background-color: aliceblue;
+}
+
+#recherche_conteneur{
+    margin-top: 2%;
+}
+
+#sfmenu li{
+    list-style: none;
+}
+
+#sfmenu ul li a {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 150px;
+    height: 30px;
+    visibility: hidden;
+    position: absolute;
+}
+
+#sfmenu ul li:hover{
+   visibility: visible;
+}
+
+#sfmenu {
+    margin: 0;
+    padding: 0;
+}
