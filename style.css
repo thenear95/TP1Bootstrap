@@ -8,23 +8,43 @@
 
 #sfmenu li{
     list-style: none;
+    background-color: #f2f2f2;
 }
 
-#sfmenu ul li a {
-    float: left;
-    text-align: center;
-    display: block;
-    width: 150px;
-    height: 30px;
+#sfmenu li ul li{
     visibility: hidden;
+    display: block;
     position: absolute;
 }
 
-#sfmenu ul li:hover{
-   visibility: visible;
+#fil ul li {
+    list-style: none;
 }
 
-#sfmenu {
-    margin: 0;
-    padding: 0;
+.fond-bleu{
+    background-color: #2d5986;
+    color: white;
+    font-size: 18px;
+    background-size: 80px 60px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+.police-bleue{
+    color: #4080bf
+}
+
+#background_centre {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+#background_centre ul li {
+   list-style: none; 
+}
+
+.fond-rouge{
+    background-color: #990000;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
 }
