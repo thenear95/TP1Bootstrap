@@ -29,8 +29,11 @@
     border-radius: 5px 5px 0 0;
     text-align: center;
 }
+
+}
 .police-bleue{
-    color: #4080bf
+    color: #4080bf;
+    font-weight: bold;
 }
 
 #background_centre {
@@ -47,4 +50,22 @@
     color: white;
     font-size: 18px;
     border-radius: 5px 5px 0 0;
+}
+
+#background_astuces{
+    background-color: #f2f2f2;
+    border-radius: 10px;    
+}
+
+#background_astuces ul li {
+   list-style: none; 
+}
+
+#background_actualites{
+    background-color: #f2f2f2;
+    border-radius: 10px;    
+}
+
+#background_actualites ul li {
+   list-style: none; 
 }
