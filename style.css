@@ -1,3 +1,6 @@
+.container-fluid {
+    padding: 0 !important
+}
 .container-head{
     background-color: aliceblue;
 }
@@ -7,7 +10,12 @@
 }
 
 #sfmenu {
-    display: flex;
+    display:flex;
+    list-style-type: none;
+}
+
+#sfmenu>li {
+    background-image: url(photos/bkg_menu_demarches.jpg);
 }
 
 #sfmenu>li>a {
@@ -17,6 +25,7 @@
 
 #sfmenu li ul {
     display: none;
+    
 }
 
 #sfmenu>li:hover ul {
@@ -28,8 +37,13 @@
     z-index: 1000;
 }
 
-#fil ul li {
+#fil>ul>li {
+    display: inline-block;
     list-style: none;
+}
+
+#fil>ul>li:first-child {
+    font-weight: bold;
 }
 
 .fond-bleu{
@@ -69,7 +83,7 @@
 }
 
 #background_astuces{
-    width: 105%;
+    width: 100%;
     background-color: #f2f2f2;
     border-radius: 10px;
     box-shadow:3px 3px 3px #888;
@@ -82,7 +96,7 @@
 
 
 #background_actualites{
-    width: 105%;
+    width: 100%;
     background-color: #f2f2f2;
     border-radius: 10px;
     box-shadow:3px 3px 3px #888;
