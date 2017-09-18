@@ -6,9 +6,15 @@
     margin-top: 2%;
 }
 
+#sfmenu{
+    display:flex;
+}
+
 #sfmenu li{
     list-style: none;
     background-color: #f2f2f2;
+    width: 150%;
+    height: 100%;
 }
 
 #sfmenu li ul li{
@@ -24,21 +30,24 @@
 .fond-bleu{
     background-color: #2d5986;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     background-size: 80px 60px;
-    border-radius: 5px 5px 0 0;
-    text-align: center;
+    border-radius: 9px 9px 0 0;
+    height: 35px;
+    padding: 7px;
 }
 
-}
+
 .police-bleue{
     color: #4080bf;
-    font-weight: bold;
 }
 
 #background_centre {
+    height: 110%;
+    padding: 7px;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 0 0 7px 7px;
+    box-shadow:3px 3px 3px #888;
 }
 
 #background_centre ul li {
@@ -48,24 +57,65 @@
 .fond-rouge{
     background-color: #990000;
     color: white;
-    font-size: 18px;
-    border-radius: 5px 5px 0 0;
+    font-size: 13px;
+    border-radius: 9px 9px 0 0;
+    height: 35px;
+    padding: 7px;
 }
 
 #background_astuces{
+    width: 105%;
     background-color: #f2f2f2;
-    border-radius: 10px;    
+    border-radius: 10px;
+    box-shadow:3px 3px 3px #888;
 }
 
-#background_astuces ul li {
-   list-style: none; 
+#background_astuces ul li{
+    font-size: 13px;
+    list-style: none;
 }
+
 
 #background_actualites{
+    width: 105%;
     background-color: #f2f2f2;
-    border-radius: 10px;    
+    border-radius: 10px;
+    box-shadow:3px 3px 3px #888;
 }
 
 #background_actualites ul li {
    list-style: none; 
+    font-size: 13px;
+}
+
+.date{
+    color: darkred;
+    font-weight: bold;
+}
+
+#background_footer{
+    background-color: #009de6;
+    color: white;
+    width: 100%;
+    padding: 7px;
+}
+
+#images_pied{
+    padding: 7px;
+}
+
+#fin_du_pied{
+    background-color: #005780;
+    width: 100%;
+    color: black;
+    border-radius: 0 0 7px 7px;
+    margin-bottom: 3px;
+}
+
+#fin_du_pied {
+    text-align: center;
+}
+
+#fin_du_pied a {
+    color: white;
 }
