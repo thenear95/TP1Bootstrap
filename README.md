@@ -1,28 +1,21 @@
 # TP1Bootstrap
 A rendre pour le 18 sept
 
-<?php
-
-namespace Album;
-
-class Module
-{
-    public function getAutoloaderConfig()
-    {
-        return array(
-            'Zend\Loader\ClassMapAutoloader' => array(
-                __DIR__ . '/autoload_classmap.php',
-            ),
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
-                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
+    'router' => array(
+        'routes' => array(
+            'album' => array(
+                'type' => 'segment',
+                'options' => array(
+                    'route' => '/album[/:action][/:id]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id' => '[0-9]+',
+                    ),
+                    'defaults' => array(
+                        'controller' => 'album',
+                        'action' => 'index',
+                    ),
                 ),
             ),
-        );
-    }
-
-    public function getConfig()
-    {
-        return include __DIR__ . '/config/module.config.php';
-    }
-}
+        ),
+    ),
