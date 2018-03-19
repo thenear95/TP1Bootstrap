@@ -1,21 +1,28 @@
 # TP1Bootstrap
 A rendre pour le 18 sept
 
-#sfmenu ul li a {
-    display: block;
-    visibility: hidden;
-    position: absolute;
-}
+<?php
 
-#sfmenu>li>ul:hover>li{
-   visibility: visible;
-}
+namespace Album;
 
-#sfmenu {
-    margin: 0;
-    padding: 0; 
-}
+class Module
+{
+    public function getAutoloaderConfig()
+    {
+        return array(
+            'Zend\Loader\ClassMapAutoloader' => array(
+                __DIR__ . '/autoload_classmap.php',
+            ),
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
+                ),
+            ),
+        );
+    }
 
-#sfmenu>li>ul {
-    display: none;
+    public function getConfig()
+    {
+        return include __DIR__ . '/config/module.config.php';
+    }
 }
